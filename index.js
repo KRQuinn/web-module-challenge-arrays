@@ -143,8 +143,16 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array, string){
+    // Loop to check every item in array
+    for (let i = 0; i < array.length; i++){
+        // Checks to see if string is equal to item 
+        if(array[i] === string){
+            // Removes item by index #
+            array.splice(i, 1);
+        }
+    }
+    return array;
 }
 
 
